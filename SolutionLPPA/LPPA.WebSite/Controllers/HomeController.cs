@@ -7,7 +7,8 @@ using System.Web.Mvc;
 namespace LPPA.WebSite.Controllers
 {
     public class HomeController : Controller
-    {
+    {   
+        [HttpGet]
         public ActionResult Index()
         {
             return View();
@@ -20,6 +21,7 @@ namespace LPPA.WebSite.Controllers
             return View();
         }
 
+        [HttpPost]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
